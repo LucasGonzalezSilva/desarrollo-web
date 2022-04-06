@@ -10,6 +10,18 @@
 }
 
    body{ font-family: 'Fredoka', sans-serif;
+    margin: 0;
+    padding:0 ;
+    display: grid;
+   gap: 1rem;
+   grid-template-rows: auto 1fr auto ;
+   min-height: 100vh;
+   grid: template columns 1fr;;
+   grid-template-areas: 
+   "header"
+   "main"
+   "footer"
+   ;
 
 }
    h1 {
@@ -38,4 +50,43 @@
 }
 
 .display-2-Intro {font-size: 1.4rem;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  article {
+    display: flex;
+    flex: 0 1 300px;
+    flex-direction: column;
+    border: 1px solid blueviolet;
+    border-radius: 1rem;
+    padding: 2rem;
+  }
+  
+  article img {
+    order: -1;
+    align-self: center;
+  }
+  
+  article button {
+    background: blueviolet;
+    color:white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  footer{
+    grid-area: footer;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6rem;
 }
