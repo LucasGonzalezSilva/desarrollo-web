@@ -32,6 +32,9 @@
         text-decoration: none;
         text-transform: uppercase;
         color: rgb(255, 255, 255);
+        display: inline-block;
+        margin-left: 1rem;
+        list-style-type: none;
     }
 
     header {background-color: rgb(107, 21, 177);
@@ -39,6 +42,11 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+        grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6rem;
     }
 
 .display-2 {text-transform: initial;
@@ -89,4 +97,10 @@ section {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 6rem;
+}
+
+.header__nav ul li{
+    display: inline-block;
+    margin-left: 1rem;
+
 }
