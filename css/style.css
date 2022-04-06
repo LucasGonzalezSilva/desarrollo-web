@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+
+.container-grid{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+}
+
+   body{ font-family: 'Fredoka', sans-serif;
+
+}
+   h1 {
+       color: rgb(12, 12, 48);
+    }
+
+    .nav__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+    }
+
+    header {background-color: rgb(107, 21, 177);
+        background-image: url(https://placeimg.com/200/150/tech);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+.display-2 {text-transform: initial;
+    color: darkslateblue;
+    font-size: 4.5rem;
+    font-weight: 400;
+}
+.display-2-Titulo {font-weight: 700;
+}
+
+.display-2-Intro {font-size: 1.4rem;
+}
