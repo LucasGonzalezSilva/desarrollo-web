@@ -32,13 +32,18 @@
         text-decoration: none;
         text-transform: uppercase;
         color: rgb(255, 255, 255);
+        
     }
 
     header {background-color: rgb(107, 21, 177);
+        box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.15);
         background-image: url(https://placeimg.com/200/150/tech);
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+        background-image: linear-gradient(to bottom, rgb(65, 0, 139), rgb(119, 35, 255))
+        
+        
     }
 
 .display-2 {text-transform: initial;
@@ -60,6 +65,7 @@ section {
   }
   
   article {
+    height: 350px;
     display: flex;
     flex: 0 1 300px;
     flex-direction: column;
@@ -69,9 +75,16 @@ section {
   }
   
   article img {
-    order: -1;
+    height: 250px;
     align-self: center;
+    transition: heigth 3s;
   }
+
+  article img:hover {
+    height: 290px;
+  }
+
+
   
   article button {
     background: blueviolet;
@@ -81,7 +94,16 @@ section {
     border-radius: 1rem;
     font-size: 1.2rem;
     cursor: pointer;
+    transition: all 0,5s ease;
+  
   }
+
+  article button:hover{
+    background-color: darkblue;
+    color: aliceblue;
+  }
+
+
   footer{
     grid-area: footer;
     background-color: blueviolet;
@@ -89,4 +111,5 @@ section {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 6rem;
+    background-image: linear-gradient(to bottom, rgb(65, 0, 139), rgb(119, 35, 255));
 }
